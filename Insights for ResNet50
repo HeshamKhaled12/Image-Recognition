@@ -1,0 +1,10 @@
+Initial Training
+- When I first trained the model on 10 classes of animals, I noticed overfitting after 11 epochs.
+- I observed that the photos needed color augmentation to improve the model's performance.
+Second Training
+- I ran the training again with 70% of the data for training. Overfitting persisted.
+- I found that the data was imbalanced, with some classes having many more photos than others (e.g., dogs had 4000+ photos, while cats had only 1000+).
+Third Training
+- To address the imbalance, I upsampled the photos for the underrepresented classes.
+- After this adjustment, the training accuracy improved to 98%, and the validation and test accuracy reached 96%.
+- The errors mainly came from photos that were unclear even to the human eye.
